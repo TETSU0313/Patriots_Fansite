@@ -1,0 +1,310 @@
+/* NOTE:
+
+  Patriots Portal
+
+  Author: Juan Valencia
+  Date 8/1/2018
+
+  This file contains all the layout styling and media queries for index.html file*/
+
+
+html {
+  display: block;
+  background: url(Background1.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: 100%;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  display: block;
+  width: 98%;
+  margin: 0px auto;
+}
+
+/* NOTE: Header */
+header > img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  opacity: .6;
+}
+
+header nav.horizontal ul {
+  padding-left: 0px;
+
+}
+
+header nav.horizontal li {
+  display: block;
+  float: left;
+  text-align: center;
+  margin: 0px auto;
+  width: 20%;
+}
+
+nav.horizontal li a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: rgb(14, 19, 110);
+  font-weight: bold;
+  background-color: lightgrey;
+  border: solid 2px rgb(14, 19, 110);
+  margin: 0px auto;
+  border-radius: 5px;
+  opacity: 0.6;
+}
+
+nav.horizontal li a:hover {
+  text-transform: uppercase;
+  background: rgb(214, 0, 0);
+  color: color: rgb(14, 19, 183);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* NOTE: jumbotron */
+.jumbotron {
+  width: 90%;
+  margin: 0px auto;
+  display: block;
+  padding-left: 50px;
+}
+
+.jumbotron-img1 img, .jumbotron-img2 img, .jumbotron-img3 img {
+  display: block;
+  float: left;
+  padding: 15px;
+  height: 150px;
+  width: 28%;
+  opacity: 0.9;
+}
+
+.jumbotron-img1 img:hover, .jumbotron-img2 img:hover, .jumbotron-img3 img:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transform: translateY(10px);
+}
+
+.jumbotron-img1 img {
+  transform: perspective(450px) rotateY(20deg) scaleX(0.90);
+}
+
+.jumbotron-img2 img {
+  transform: scale(0.88);
+}
+
+.jumbotron-img3 img{
+  transform: perspective(450px) rotateY(-20deg) scale(0.90);
+}
+
+/* NOTE: radio link */
+a#radio {
+  display: inline-block;
+  margin: 0px auto;
+  width: 100%;
+
+}
+
+#radio img{
+  width: 90%;
+  transform: scaleY(0.9);
+  display: block;
+  margin: 0px auto;
+  opacity: 0.8;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+a#radio img:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  margin: 0px auto;
+}
+
+/* NOTE: schedule scrollbar element */
+#schedule {
+  margin: 0px auto;
+  overflow-y: scroll;
+  max-height: 50vh;
+  width: 90%;
+  padding-left: 0px;
+  text-align: center;
+  color: navy;
+  background: lightgrey;
+  opacity: 0.9;
+  border-radius: 5px;
+}
+
+#schedule img {
+  margin: 0px auto;
+  width: 97%;
+  display: block;
+  transform: perspective(450px);
+}
+
+/* NOTE: video span */
+#videoSpan {
+  display: flex;
+  width: 90%;
+  margin: 0px auto;
+  flex-flow: row;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+.videos {
+  text-align: center;
+  color: navy;
+  line-height: 70%;
+  margin-bottom: 15px;
+}
+
+.videos h3 {
+  background-color: red;
+  opacity: 0.6;
+  line-height: 25px;
+  margin-bottom: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* NOTE: two column flex  */
+#news {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row;
+  width: 90%;
+  margin: 0px auto;
+  background-color: lightgrey;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+
+article {
+  width: 45%;
+}
+
+.news1 h3, .news2 h3 {
+  text-align: center;
+  color: navy;
+}
+
+.news1 p, .news2 p {
+  overflow-y: scroll;
+  max-height: 30vh;
+  padding-left: 0px;
+  color: navy;
+  border: 2px navy solid;
+  border-radius: 5px;
+}
+
+.newslink {
+  display: block;
+  margin: 0px auto;
+  color: navy;
+  background-color: lightgrey;
+  width: 90%;
+  opacity: 0.8;
+  transform: translateY(-17px);
+  line-height: 30px;
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.newslink a {
+  text-decoration: none;
+  color: red;
+}
+
+.newslink a:hover {
+  text-decoration: none;
+  text-transform: capitalize;
+  background: white;
+  color: color: rgb(14, 19, 183);
+}
+
+footer {
+  background-color: darkgrey;
+  display: flex;
+  margin: 0px auto;
+  justify-content: space-between;
+  flex-flow: row;
+  width: 89%;
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer p {
+  color: navy;
+}
+
+
+/* NOTE: Mobile styling */
+
+@media only screen and (max-width: 480px) {
+
+html {
+  width: 100%;
+  font-size: 10px;
+}
+
+nav.horizontal ul, .banner, .jumbotron  {
+display: none;
+}
+
+#navicon img {
+  width: 10%;
+}
+
+a#navicon:hover+ul, nav.horizontal ul:hover+ul {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+nav li {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+
+
+#videoSpan {
+  display: flex;
+  flex-flow: column;
+}
+
+.videos, iframe {
+  display: block;
+  width: 100%;
+}
+
+#news article.news2 {
+  display: none;
+
+}
+
+.news1 {
+  width: 90%;
+}
+
+}
+
+/* NOTE: Tablet & desktop styling */
+
+@media only screen and (min-width: 481px) {
+  #navicon img {
+    display: none;
+  }
+
+}
